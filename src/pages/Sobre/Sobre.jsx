@@ -1,8 +1,10 @@
 import { styles } from "./Sobre.module.css" 
 
 
-export default function Sobre(){
+export function Sobre(){
     return(
-        <div className={styles.Sobre}></div>
+        <div className={styles.Sobre}>
+            <h2>Sobre</h2>
+        </div>
     )
 }

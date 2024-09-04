@@ -1,8 +1,10 @@
 import { styles } from "./Contato.module.css"
 
 
-export default function Contato(){
+export function Contato(){
     return(
-        <div className={styles.Contato}></div>    
+        <div className={styles.Contato}>
+            <h2>Contato</h2>
+        </div>    
     )
 }
