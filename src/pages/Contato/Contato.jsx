@@ -1,10 +1,10 @@
-import styles from "./Contato.module.css"
+import { Menu } from "../../componets/Menu/Menu"
 
 
 export function Contato(){
     return(
-        <div className={styles.Contato}>
-            <h2>Contato</h2>
+        <div className="flex">
+            <h2 className="font-bold text-4xl">Contato</h2>
         </div>    
     )
 }
