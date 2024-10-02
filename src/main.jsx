@@ -17,6 +17,8 @@ import { SemEstado } from "./pages/estado/SemEstado";
 import { ComEstado } from "./pages/estado/ComEstado";
 import { CampoTexto } from "./pages/estado/CampoTexto";
 import { Contador } from "./pages/estado/Contador";
+import {ComunicacaoDireta} from "./pages/comunicacao/ComunicacaoDireta"
+import {ComunicacaoIndireta} from "./pages/comunicacao/ComunicacaoIndireta"
 
 
 
@@ -25,10 +27,12 @@ import { Contador } from "./pages/estado/Contador";
 //   {path:"/home", element: <Home/>},
 //   {path:"/contato", element: <Contato/>},
 //   {path:"/sobre", element: <Sobre/>},  
-//   {path:"/semEstado", element: <semEstado/>},  
-//   {path:"/comEstado", element: <ComEstado/>},  
+//   {path:"/semestado", element: <semEstado/>},  
+//   {path:"/comestado", element: <ComEstado/>},  
 //   {path:"/campoTexto", element: <CampoTexto/>},  
 //   {path:"/contador", element: <Contador/>},  
+//   {path:"/comunicacaodireta", element: <ComunicacaoDireta/>},  
+//   {path:"/comunicacaoindireta", element: <ComunicacaoIndireta/>},  
 //   {path:"*", element: <Pagina404/>}
 // ])
 
@@ -43,7 +47,8 @@ const rotas = createBrowserRouter(
       <Route path="comEstado" element={<ComEstado />} />
       <Route path="campoTexto" element={<CampoTexto />} />
       <Route path="contador" element={<Contador />} />
-
+      <Route path="comunicacaodireta" element={<ComunicacaoDireta />} />
+      <Route path="comunicacaoindireta" element={<ComunicacaoIndireta />} />
       <Route path="*" element={<Pagina404 />} />
     </Route>
   )

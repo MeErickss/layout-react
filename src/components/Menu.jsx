@@ -3,6 +3,9 @@ import {
   IconBrandReact,
   IconHome,
   IconInfoCircle,
+  IconMessage,
+  IconMessage2Up,
+  IconMessageDown,
   IconRouteAltLeft,
   IconSquareRoundedNumber1,
   IconSquareRoundedNumber2,
@@ -84,6 +87,18 @@ export function Menu() {
         <NavLink to="contador" className={getEstilo}>
           <IconSquareRoundedNumber4 />
           Contador
+        </NavLink>
+
+        <span className="pt-4 pl-3 text-xs text-zinc-500">Comunicação</span>
+
+        <NavLink to="comunicacaodireta" className={getEstilo}>
+          <IconMessage2Up />
+          Comunicação Direta
+        </NavLink>    
+
+        <NavLink to="comunicacaoindireta" className={getEstilo}>
+          <IconMessageDown />
+          Comunicação Indireta
         </NavLink>
         
       </nav>
