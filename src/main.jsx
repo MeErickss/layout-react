@@ -17,23 +17,17 @@ import { SemEstado } from "./pages/estado/SemEstado";
 import { ComEstado } from "./pages/estado/ComEstado";
 import { CampoTexto } from "./pages/estado/CampoTexto";
 import { Contador } from "./pages/estado/Contador";
-import {ComunicacaoDireta} from "./pages/comunicacao/ComunicacaoDireta"
-import {ComunicacaoIndireta} from "./pages/comunicacao/ComunicacaoIndireta"
-
-
+import { ComunicacaoDireta } from "./pages/comunicacao/ComunicacaoDireta";
+import { ComunicacaoIndireta } from "./pages/comunicacao/ComunicacaoIndireta";
+import { UseRef } from "./pages/hooks-basicos/UseRef";
+import { UseEffect } from "./pages/hooks-basicos/UseEffect";
 
 // const rotas = createBrowserRouter([
-//   {path:"/", element: <Layout/>},
+//   {path:"/", element: <Home/>},
 //   {path:"/home", element: <Home/>},
 //   {path:"/contato", element: <Contato/>},
-//   {path:"/sobre", element: <Sobre/>},  
-//   {path:"/semestado", element: <semEstado/>},  
-//   {path:"/comestado", element: <ComEstado/>},  
-//   {path:"/campoTexto", element: <CampoTexto/>},  
-//   {path:"/contador", element: <Contador/>},  
-//   {path:"/comunicacaodireta", element: <ComunicacaoDireta/>},  
-//   {path:"/comunicacaoindireta", element: <ComunicacaoIndireta/>},  
-//   {path:"*", element: <Pagina404/>}
+//   {path:"/sobre", element: <Sobre/>},
+//   {path:"*", element: <Pagina404/>},
 // ])
 
 const rotas = createBrowserRouter(
@@ -43,12 +37,14 @@ const rotas = createBrowserRouter(
       <Route path="home" element={<Home />} />
       <Route path="contato" element={<Contato />} />
       <Route path="sobre" element={<Sobre />} />
-      <Route path="semEstado" element={<SemEstado />} />
-      <Route path="comEstado" element={<ComEstado />} />
-      <Route path="campoTexto" element={<CampoTexto />} />
-      <Route path="contador" element={<Contador />} />
-      <Route path="comunicacaodireta" element={<ComunicacaoDireta />} />
-      <Route path="comunicacaoindireta" element={<ComunicacaoIndireta />} />
+      <Route path="semEstado" element={<SemEstado/>} />
+      <Route path="comEstado" element={<ComEstado/>} />
+      <Route path="campoTexto" element={<CampoTexto/>} />
+      <Route path="contador" element={<Contador/>} />
+      <Route path="comunicacao-direta" element={<ComunicacaoDireta/>} />
+      <Route path="comunicacao-indireta" element={<ComunicacaoIndireta/>} />
+      <Route path="useRef" element={<UseRef/>} />
+      <Route path="useEffect" element={<UseEffect/>} />
       <Route path="*" element={<Pagina404 />} />
     </Route>
   )

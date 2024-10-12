@@ -1,20 +1,29 @@
 import { useState } from "react";
 import { Pagina } from "../../components/Pagina";
 
-export function CampoTexto(){
+export function CampoTexto() {
 
-    const [texto, setTexto] = useState("")
+  const [texto, setTexto] = useState("aaaa")
 
-    return(
-        <Pagina titulo="Campo de Texto" subtitulo="Conceito de Estado no React">
-            <div className="flex flex-col gap-4">
-                <input className="bg-black rounded-md" onChange={(e) => setTexto(e.target.value)} type="text" placeholder="Campo de Texto" value={texto}/>
-                <button onClick={() => setTexto("")}
-                className="bg-purple-400 rounded-md p-2"
-                >Limpar</button>
+  return (
+    <Pagina titulo="Campo de Texto" subtitulo="Conceito de Estado no React">
+      <div className="flex flex-col gap-4">
+        
+        <input 
+          type="text" 
+          className="bg-black" 
+          value={texto}
+          onChange={ (e) => setTexto(e.target.value)}
+          />
 
-                <span className="text-2xl">{texto}</span>
-            </div>
-        </Pagina>
-    )
+        <button 
+          className="bg-purple-400 p-2 rounded-md"
+          onClick={ () => setTexto("") }
+        >
+          Limpar</button>
+
+        <span className="text-2xl">{texto} </span>
+      </div>
+    </Pagina>
+  );
 }
