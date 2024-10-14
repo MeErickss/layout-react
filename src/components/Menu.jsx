@@ -3,6 +3,7 @@ import {
   IconBrandReact,
   IconHome,
   IconInfoCircle,
+  IconMessage2Cog,
   IconMessageDown,
   IconMessageUp,
   IconRouteAltLeft,
@@ -21,13 +22,6 @@ export function Menu() {
       text-sm text-white 
       hover:bg-zinc-900 `;
     let ativo = "border-r-4 border-solid border-slate-800 ";
-
-    // let final
-    // if (props.isActive){
-    //     final = estilo + ativo
-    // } else {
-    //     final = estilo
-    // }
     let final = props.isActive ? estilo + ativo : estilo;
 
     return final;
@@ -110,6 +104,13 @@ export function Menu() {
           <IconMessageUp />
           UseEffect
         </NavLink>
+
+        <span className="pt-4 pl-3 text-xs text-zinc-500">Tradutor</span>
+        <NavLink to="tradutor" className={getEstilo}>
+          <IconMessage2Cog />
+          Tradutor
+        </NavLink>
+
       </nav>
     </aside>
   );
